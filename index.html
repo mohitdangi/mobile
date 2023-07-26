@@ -24,15 +24,25 @@
             <input type="search" name="" id="search-input" placeholder="Search product name here....">
             <button id="search">Search</button>
             <div id="buttons" class="dropdown">
-                <button class="button-value" onclick="toggleDropdown()">filter <span class="arrow-down">&#9660;</span></button>
+                <button class="button-value border" onclick="toggleDropdown()">filter <span class="arrow-down">&#9660;</span></button>
                 <div id="dropdown-content">
-                  <button class="button-value" onclick="filterProduct('Iphone')">Iphone</button>
+                  <button class="button-value" onclick="toggleDropdown1();filterProduct('Iphone')">Iphone <span class="arrow-down">&#9660;</span></button>
+                  <div class="dropdown-content1 hide" id="iphone-dropdown">
+                    <button class="dropdown-option" onclick="filterProduct('Iphone 7')">iPhone 7</button>
+                    <button class="dropdown-option" onclick="filterProduct('Iphone 9')">iPhone 9</button>
+                    <button class="dropdown-option" onclick="filterProduct('Iphone 10')">iPhone 10</button>
+                    <button class="dropdown-option" onclick="filterProduct('Iphone 11')">iPhone 11</button>
+                    <button class="dropdown-option" onclick="filterProduct('Iphone 12')">iPhone 12</button>
+                    <button class="dropdown-option" onclick="filterProduct('Iphone 13')">iPhone 13</button>
+                    <button class="dropdown-option" onclick="filterProduct('Iphone 14')">iPhone 14</button>
+                  </div>
                   <button class="button-value" onclick="filterProduct('Realme')">Realme</button>
                   <button class="button-value" onclick="filterProduct('Samsung')">Samsung</button>
                   <button class="button-value" onclick="filterProduct('Oneplus')">Oneplus</button>
                   <button class="button-value" onclick="filterProduct('iphone476960')">iPhone 476960</button>
                 </div>
-        </div>
+              </div>
+              
           </div>
           
         
